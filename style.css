@@ -1,0 +1,137 @@
+body {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: auto;
+    gap: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: #F0FAF8;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.footer {
+    color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-dark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #1F2937;
+}
+
+.bg-medium {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #E5E7EB;
+}
+
+.bg-white {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+}
+
+.main-title {
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #F0FAF8;
+}
+
+.secondary-text {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.header-logo-text {
+    font-size: 24px;
+    color: #F0FAF8;
+}
+
+button {
+    background-color: #3882F6;
+}
+
+.block-header {
+    font-size: 36px;
+    font-weight: extra-bold;
+    color: #1F2937;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-weight: light-italic;
+    color: #1F2937;
+}
+
+.content-container-1 {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.content-container-1 > * {
+    flex-basis: 100%;
+}
+
+.content-container-2 {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+
+.content-container-3 {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.quote-text {
+    text-align: left;
+}
+
+.quote-author {
+    text-align: right;
+}
+
+.content-container-4 {
+    display: flex;
+    background-color: #3882F6;
+    width: 70%;
+    margin: 40px;
+}
+
+.hero-text {
+    text-align: left;
+}
