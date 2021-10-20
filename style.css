@@ -92,15 +92,9 @@ button {
 }
 
 .block-header {
+    color: #1F2937;
     font-size: 36px;
     font-weight: extra-bold;
-    color: #1F2937;
-}
-
-.quote-text {
-    font-size: 36px;
-    font-weight: light-italic;
-    color: #1F2937;
 }
 
 .content-container-1 {
@@ -109,12 +103,15 @@ button {
     justify-content: center;
     align-items: center;
     margin-bottom: 2em;
+    max-width: 1024px;
     height: 100vh;
     width: 70%;
 }
 
 .hero-container {
     display: flex;
+    gap: 1em;
+    align-items: center;
     margin: auto 0;
     width: 100%;
 }
@@ -123,46 +120,66 @@ button {
     flex-basis: 100%;
 }
 
+.hero-image {
+    border-radius: 8px;
+    background-color: #CCC;
+    content: "";
+    width: 100%;
+    height: 275px;
+}
+
 .content-container-2 {
     display: flex;
     flex-direction: column;
+    gap: 1em;
+    padding: 2em 0;
     margin: 2em;
+    max-width: 1024px;
     width: 60%;
 }
 
 .card-container {
     display: flex;
     justify-content: space-between;
-    gap: 12px;
+    gap: 1em;
 }
 
-.image-card img {
+.image {
     border: 2px solid #3882F6;
     border-radius: 8px;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 1em;
 }
 .content-container-3 {
     display: flex;
     flex-direction: column;
+    padding: 2em 0;
     margin: 2em;
+    max-width: 1024px;
     width: 60%;
 }
 
 .quote-text {
     text-align: left;
+    font-size: 32px;
+    color: #1F2937;
 }
 
 .quote-author {
     text-align: right;
+    font-weight: bold;
 }
 
 .content-container-4 {
     border-radius: 8px;
     display: flex;
     background-color: #3882F6;
-    justify-content: space-between;
+    justify-content: space-around;
     color: #E5E7EB;
     padding: 2em;
-    margin: 2em;
+    margin: 4em;
+    max-width: 1024px;
     width: 70%;
 }
 
@@ -180,16 +197,36 @@ button {
     text-align: left;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
+    .content-container-1 {
+        height: auto;
+        width: 90%;
+    }
+
+    .content-container-2 {
+        width: 80%;
+    }
+
+    .content-container-3 {
+        width: 80%;
+    }
+
+    .content-container-4 {
+        flex-direction: column;
+        gap: 1em;
+        width: 90%;
+    }
+
+    .hero-container {
+        gap: 1.75em;
+        margin: 2em;
+    }
+
     .hero-container {
         flex-direction: column;
     }
 
     .card-container {
-        flex-direction: column;
-    }
-
-    .content-container-4 {
         flex-direction: column;
     }
 }
